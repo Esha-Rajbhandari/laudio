@@ -464,13 +464,13 @@ img {
     align-items: center; }
 
 .cup {
-  background: #e1f2ff url("../../Sass-Starter/images/cup.png") no-repeat center; }
+  background: #e1f2ff url("../images/cup.png") no-repeat center; }
 
 .time {
-  background: #ffe2e1 url("../../Sass-Starter/images/time-red.png") no-repeat center; }
+  background: #ffe2e1 url("../images/time-red.png") no-repeat center; }
 
 .person {
-  background: #fff4e4 url("../../Sass-Starter/images/person.png") no-repeat center; }
+  background: #fff4e4 url("../images/person.png") no-repeat center; }
 
 .workflow-block .block-title {
   margin-top: 52px; }
