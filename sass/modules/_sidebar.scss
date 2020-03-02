@@ -1,0 +1,36 @@
+.sidebar {
+  nav {
+    flex-direction: column;
+  }
+
+  a {
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 8px 15px;
+    margin-bottom: 12px;
+    @include hover {
+      @include rounded(20px, $white-lilac);
+    }
+  }
+
+  img {
+    margin-right: 14.95px;
+  }
+
+  h3 {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 38px 0px 20px 15px;
+    color: $abbey;
+  }
+
+  .nav--active {
+    @include rounded(20px, $white-lilac);
+  }
+
+  .nav--disabled{
+      color: $mischka;
+  }
+}

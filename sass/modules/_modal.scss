@@ -1,0 +1,227 @@
+.modal-container {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 500;
+  overflow: auto;
+  animation-name: animate;
+  animation-duration: 1s;
+}
+
+.modal-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+.modal {
+  width: 670px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  @include rounded(6px, $white);
+  margin: 0px auto;
+  padding: 20px;
+
+  @include e(header) {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h1 {
+    display: inline;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: $mid-gray;
+    margin-right: 10px;
+  }
+
+  .date {
+    font-size: 14px;
+    line-height: 16px;
+    color: #94969a;
+  }
+
+  ul {
+    align-items: center;
+    margin: 20px 0px;
+  }
+
+  .rounded-md {
+    padding: 3px 10px;
+    @include rounded(26px, $white-lilac);
+    color: $blue;
+    margin-right: 10px;
+  }
+
+  a {
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  li:last-child {
+    margin-right: 0px;
+  }
+
+  .active {
+    a {
+      color: $white;
+    }
+    background: $blue;
+  }
+
+  .rounded-20 {
+    @include rounded(20px);
+  }
+}
+
+.form-block {
+  margin-bottom: 15px;
+
+  .error-msg {
+    margin-left: 15px;
+    font-size: 10px;
+    line-height: 12px;
+    color: #ef5350;
+  }
+
+  .error-msg--cat {
+    padding-top: 5px;
+  }
+}
+
+.input-form {
+  border: 1px solid $mischka;
+  padding: 9px 15px;
+  input,
+  textarea,
+  select {
+    border: none;
+    width: 454px;
+  }
+
+  img {
+    margin-right: 4px;
+  }
+
+  .message-menu {
+    align-items: center;
+    margin: 0px;
+
+    li {
+      margin-right: 21px;
+    }
+
+    img {
+      margin-right: 10px;
+    }
+
+    a {
+      color: $mid-gray;
+      font-size: 14px;
+    }
+  }
+}
+
+.hashtag-block {
+  h2 {
+    padding-top: 15px;
+    font-size: 14px;
+    line-height: 16px;
+    color: $mid-gray;
+  }
+
+  .hashtag {
+    border: 1px solid $mischka;
+    width: fit-content;
+    align-items: center;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 15px;
+    margin-right: 15px;
+    padding: 5px 5px;
+    cursor: pointer;
+  }
+
+  .hashtag--selected {
+    background: #e1f2ff;
+    border: 1px solid #42a5f5 !important;
+  }
+
+  .category {
+    margin-top: 15px;
+  }
+
+  select {
+    width: 570px;
+    appearance: none;
+    background: url("../../Sass-Starter/images/select.png") no-repeat right;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 20px;
+    color: #323335;
+  }
+
+  @include e(footer) {
+    margin-top: 20px;
+    justify-content: flex-end;
+
+    a {
+      color: $white;
+      font-size: 14px;
+    }
+  }
+
+  .media-icon {
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+  }
+
+  .rounded-48 {
+    @include rounded(48px);
+  }
+
+  .btn {
+    background: $blue;
+    padding: 11px;
+    width: 283px;
+  }
+}
+
+.bg-pattens-blue{
+  background: $picton-blue;
+}
+
+.bg-pippin{
+  background: $pippin;
+}
+
+.bg-sazerac{
+  background: $sazerac;
+}
+
+.bg-snuff{
+  background: $snuff;
+}
+
+.bg-swiss-coffee{
+  background: $swiss-coffee;
+}
+
+.bg-porcelain{
+  background: $porcelain;
+}
+
+@keyframes animate {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
