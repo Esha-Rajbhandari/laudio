@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Laudio</title>
+    <link rel="stylesheet" href="../dist/css/style.css">
+</head>
+
+<body>
+    <div class="modal-container">
+        <div class="modal">
+            <div class="modal__header flex-container">
+                <div class="modal__headerLeft">
+                    <h1>Send Message</h1>
+                    <span class="date">Nov 18th, 2019</span>
+                </div>
+                <div class="modal__headerRight">
+                    <img src="images/close.png" alt="Close">
+                </div>
+            </div>
+            <div class="modal__body">
+                <div class="modal__options">
+                    <ul class="flex-container">
+                        <li class="active rounded-md">
+                            <a href=""><i class="fas fa-at"></i> &emsp; via Email</a>
+                        </li>
+                        <li class="rounded-md">
+                            <a href=""><i class="far fa-comment-alt"></i>&emsp; via Text</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <form action="">
+                    <div class="form-block">
+                        <div class="input-form rounded-20">
+                            <img src="images/team-members.png" alt="Members">
+                            <input type="text" name="" id="team_member" placeholder="Add team members*"
+                                msg="Please add a team member">
+                            <a href="">
+                                <img src="images/cc.png" alt="CC">
+                            </a>
+                            <span class="rounded-md">
+                                <a href="">Email a shift</a>
+                            </span>
+                        </div>
+                        <div class="error-msg d-none">Wrong</div>
+                    </div>
+
+                    <div class="form-block">
+                        <div class="input-form rounded-20">
+                            <input type="text" name="" id="subject" placeholder="Subject*" msg="Please add a subject">
+                        </div>
+                        <div class="error-msg d-none">Please add a subject</div>
+                    </div>
+
+                    <div class="input-form rounded-20">
+                        <textarea name="" id="" cols="50" rows="10" placeholder="Enter Your message"></textarea>
+                        <ul class="flex-container message-menu">
+                            <li class="nav--disabled">
+                                <a href=""><img src="images/share.png" alt="">Public</a>
+                            </li>
+                            <li>
+                                <a href=""><img src="images/followup.png" alt="">Add Follow up</a>
+                            </li>
+                            <li>
+                                <a href=""><img src="images/attach.png" alt="">Attach</a>
+                            </li>
+                            <li>
+                                <a href=""><img src="images/ecard.png" alt="">Add eCards</a>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+
+                <div class="hashtag-block">
+                    <div class="hashtag-block__header">
+                        <h2>Tell us more about your message</h2>
+                    </div>
+                    <div class="hashtag-block__body flex-container">
+                        <div class="hashtag rounded-20 flex-container">
+                            <div class="media-icon media-icon--sm  flex-container">
+                                <img src="images/cup.png" alt="Media">
+                            </div>
+                            <span>Celebration and Recognition</span>
+                        </div>
+                        <div class="hashtag rounded-20 flex-container">
+                            <div class="media-icon media-icon--sm  flex-container">
+                                <img src="images/time-red.png" alt="Media">
+                            </div>
+                            <span>Accountability</span>
+                        </div>
+                        <div class="hashtag rounded-20 flex-container">
+                            <div class="media-icon media-icon--sm  flex-container">
+                                <img src="images/burnout.png" alt="Media">
+                            </div>
+                            <span>Risk of Burnout</span>
+                        </div>
+                        <div class="hashtag rounded-20 flex-container">
+                            <div class="media-icon media-icon--sm  flex-container">
+                                <img src="images/emp-dev.png" alt="Media">
+                            </div>
+                            <span>Employee Development</span>
+                        </div>
+                        <div class="hashtag rounded-20 flex-container">
+                            <div class="media-icon media-icon--sm  flex-container">
+                                <img src="images/emp-rounding.png" alt="Media">
+                            </div>
+                            <span>Employee Rounding</span>
+                        </div>
+                        <div class="hashtag rounded-20 flex-container">
+                            <div class="media-icon media-icon--sm  flex-container">
+                                <img src="images/other.png" alt="Media">
+                            </div>
+                            <span>Other</span>
+                        </div>
+                    </div>
+                    <div class="form-block">
+                        <div class="error-msg error-msg--cat d-none">Please select a category</div>
+                    </div>
+                    <div class="category d-none">
+                        <div class="input-form rounded-20">
+                            <img src="images/tag.png" alt="Tag">
+                            <select name="" id="">
+                                <option value="0">Other</option>
+                                <option value="1">Clinical Expertise</option>
+                                <option value="2">Being a team player</option>
+                                <option value="3">Skillful Communication</option>
+                                <option value="4">Compassion and Empathy</option>
+                                <option value="5">Life Event</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="hashtag-block__footer flex-container">
+                        <div class="btn rounded-48">
+                            <a href="">Profile & Proceed To Outlook</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/c907bdc697.js" crossorigin="anonymous"></script>
+    <script src="js/modal.js"></script>
+</body>
+
+</html>

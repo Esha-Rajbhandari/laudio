@@ -1,0 +1,267 @@
+.card {
+  @include rounded(6px, $white);
+  // padding: 15px 20px;
+  margin-top: 27px;
+
+  @include e(header) {
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+  }
+
+  @include e(body) {
+    .media-body {
+      padding: 0px 20px 15px 20px;
+    }
+  }
+
+  @include e(header_left) {
+    align-items: center;
+  }
+
+  @include e(header_right) {
+    align-items: center;
+    img {
+      margin-right: 16.29px;
+    }
+    img:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  @include e(footer) {
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    line-height: 16px;
+    color: $manatee;
+    padding: 11px 10px 15px 20px;
+    border-top: 1px solid #e9ebee;
+  }
+
+  @include e(footer_right) {
+    width: 30%;
+    text-align: right;
+  }
+
+  @include e(footer_left) {
+    width: 70%;
+    align-items: center;
+  }
+
+  .active {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    bottom: -4px;
+    right: 0px;
+  }
+
+  .active--disabled {
+    display: none;
+  }
+
+  .icon {
+    justify-content: center;
+    align-items: center;
+    @include rounded(50%, $light-gray);
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+  }
+
+  .heading {
+    align-items: center;
+    font-size: 14px;
+    line-height: 2;
+    color: $abbey;
+  }
+
+  .sub-heading {
+    font-size: 12px;
+    line-height: 14px;
+    color: $manatee;
+  }
+
+  .actions-taken {
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    padding-top: 20.76px;
+  }
+
+  .action-left {
+    width: 192px;
+  }
+
+  .action-right {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+.actions-nav {
+  background: $athens-gray;
+  padding: 7px 24px;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 14px;
+
+  @include e(left) {
+    width: 99px;
+  }
+
+  @include e(right) {
+    width: 94px;
+  }
+
+  span {
+    margin-right: 6px;
+  }
+
+  .search {
+    margin-right: 26px;
+  }
+}
+
+.member-action {
+  width: 135px;
+
+  h2 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  span {
+    display: block;
+    font-size: 12px;
+    color: $manatee;
+  }
+}
+
+.media-icon {
+  @include rounded(50%);
+  position: relative;
+
+  @include m(sm) {
+    width: 24px;
+    height: 24px;
+  }
+
+  @include m(lg) {
+    width: 42px;
+    height: 42px;
+  }
+
+  @include m(md) {
+    width: 32px;
+    height: 32px;
+  }
+
+  .card & {
+    padding: 6px;
+  }
+
+  .card__body & {
+    margin-right: 5px;
+    padding: 0px;
+    background: $white;
+    border: 1px solid $blue;
+  }
+
+  .media-body__bottom & {
+    background: $athens-gray;
+    border: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card__footer & {
+    width: 20px;
+    height: 20px;
+    background: $chetwode-blue;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+
+  .assigned & {
+    margin-right: 4px;
+    margin-left: 5px;
+    border: 1px solid $light-gray;
+    align-items: center;
+  }
+
+  .section__right & {
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+  }
+
+  .table__row & {
+    background: $white;
+    border: 1px solid $blue;
+    margin-right: 10px;
+  }
+}
+
+.media-body {
+  ul {
+    align-items: center;
+  }
+  li {
+    margin-left: 5px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #b5b7ba;
+  }
+  .period {
+    padding-bottom: 7px;
+    font-weight: bold;
+  }
+  p {
+    width: 561px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @include e(bottom) {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    li {
+      margin-right: 20px;
+      align-items: center;
+    }
+
+    li:last-child {
+      margin-right: 0px;
+    }
+
+    .assign {
+      align-items: center;
+    }
+
+    .assigned {
+      align-items: center;
+    }
+  }
+}
+
+.cup {
+  background: $pattens-blue url("../../Sass-Starter/images/cup.png") no-repeat
+    center;
+}
+
+.time {
+  background: $pippin url("../../Sass-Starter/images/time-red.png") no-repeat
+    center;
+}
+
+.person {
+  background: $sazerac url("../../Sass-Starter/images/person.png") no-repeat
+    center;
+}

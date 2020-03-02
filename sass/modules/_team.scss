@@ -1,0 +1,59 @@
+.team-info {
+  @include e(headerTop) {
+    margin-bottom: 23px;
+  }
+
+  @include e(headerBottom) {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  @include e(subheader) {
+    width: 171px;
+    font-size: 14px;
+    color: $manatee;
+    line-height: 16px;
+  }
+
+  @include e(nav) {
+    width: 393px;
+
+    nav {
+      align-items: center;
+    }
+  }
+
+  img {
+    margin-right: 10.5px;
+  }
+
+  li {
+    font-size: 14px;
+    line-height: 16px;
+    color: $manatee;
+  }
+
+  a {
+    margin-right: 27px;
+    color: $search-text-color;
+  }
+
+  a:last-child {
+    margin-right: 0px;
+  }
+
+  .card {
+    @include rounded(0px);
+    padding: 0px 15px;
+    margin-top: 0px;
+  }
+
+  .media-icon--small {
+    @include rounded(50%, $white);
+    border: 1px solid $white-lilac;
+    color: $blue;
+    justify-content: center;
+    align-items: center;
+  }
+}

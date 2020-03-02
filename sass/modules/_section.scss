@@ -1,0 +1,187 @@
+.section {
+  padding-top: 20px;
+  background: $section-background-color;
+
+  .container {
+    justify-content: space-between;
+  }
+
+  @include e(left) {
+    width: 290px;
+  }
+
+  @include e(center) {
+    width: 630px;
+    margin-right: 18px;
+  }
+
+  @include e(right) {
+    width: 305px;
+    
+
+    .card__header{
+      border-bottom: 1px solid #E9EBEE;
+      padding-bottom: 14px;
+    }
+
+    .media-body{
+      padding-top: 15px;
+    }
+
+    .media-body__top{
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+  }
+
+  .block-title {
+    position: relative;
+    z-index: 1;
+    padding-top: 10px;
+    hr {
+      height: 1px;
+      border: none;
+      background: $light-gray;
+    }
+    .sort {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      background: $section-background-color;
+      align-items: center;
+    }
+    img {
+      width: 20px;
+      height: 14px;
+      margin-left: 9.8px;
+      margin-right: 8.5px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 16px;
+      color: #646568;
+    }
+  }
+
+  .block-title__header {
+    position: absolute;
+    left: 1.36px;
+    top: -10px;
+    z-index: 15;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    color: #323335;
+    padding: 10px;
+    background: $section-background-color;
+  }
+}
+
+.section--col2{
+  .section__right{
+    width: 956px;
+  }
+}
+
+.action-block {
+  width: 100%;
+  margin: 0 auto;
+
+  .block-content {
+    justify-content: space-around;
+  }
+
+  @include e(action) {
+    padding-top: 38px;
+  }
+
+  @include e(image) {
+    @include rounded(50%, $white);
+    width: 90px;
+    height: 90px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  @include e(label) {
+    text-align: center;
+    color: $text-color;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+  }
+}
+
+.recommendation-block {
+  padding-top: 44px;
+
+  .block-title {
+    margin-bottom: 7px;
+  }
+}
+
+.more-recommendation-block {
+  padding-top: 48px;
+
+  .block-title {
+    margin-bottom: 53px;
+  }
+}
+
+.recommendation-content {
+  justify-content: space-around;
+  @include e(image) {
+    position: relative;
+    width: 68px;
+    height: 68px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    @include rounded(50%, $white);
+  }
+
+  @include e(label) {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 18px;
+    color: $text-color;
+  }
+
+  @include e(node) {
+    width: 103px;
+    justify-self: center;
+  }
+
+  .label_number {
+    position: absolute;
+    bottom: -8px;
+    right: 1px;
+    width: 24px;
+    height: 24px;
+    @include rounded(50%, $blue);
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .celeb-rec {
+    background: $picton-blue;
+  }
+
+  .accountable {
+    background: $burnt-sienna;
+  }
+
+  .check_in {
+    background: $tangerine;
+  }
+}
